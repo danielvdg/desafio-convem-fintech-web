@@ -1,4 +1,4 @@
-// components/Transaction/TransactionList.tsx
+'use client';
 import React, { useState, useEffect } from 'react';
 import TransactionModel from './transaction.model';
 import api from './transaction.service';
@@ -28,7 +28,7 @@ const TransactionComponent: React.FC = () => {
 
   return (
     <div>
-      <h1>Lista de Transações</h1>;
+      <h1>Lista de Transações</h1>
       <ul>
         {transactions.map((transaction) => (
           <li key={transaction.idempotencyId}>

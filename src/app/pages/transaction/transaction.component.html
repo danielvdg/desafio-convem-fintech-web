@@ -3,7 +3,8 @@
   <ul>
     {transactions.map((transaction) => (
       <li key={transaction.idempotencyId}>
-        <strong>ID: </strong> {transaction.idempotencyId}, <strong>Valor: </strong>
+        <strong>ID: </strong> {transaction.idempotencyId}{' '}
+        <strong>Valor: </strong>
         {transaction.amount}, <strong>Tipo: </strong>
         {transaction.type}
       </li>
